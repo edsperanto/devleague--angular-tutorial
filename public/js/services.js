@@ -1,8 +1,8 @@
 myApp.service('BookService', function() {
 	var books = [
-		'Ready Player One',
-		'Enders Game',
-		'Harry Potter and the Philosophers Stone'
+		{title: 'Ready Player one', author: 'Ernest Cline'},
+		{title: 'Enders Game', author: 'Orson Scott Card'},
+		{title: 'Harry Potter and the Philosophers Stone', author: 'J.K. Rowling'}
 	];
 	this.getBooks = function() {
 		return books;

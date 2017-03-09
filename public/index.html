@@ -29,6 +29,12 @@
 		<br>
 		concat: {{charVersion}}
 		<br>
+		<ul ng-repeat="books in books">
+			<li class="book">
+				<h4 class="book_title">{{books.title}}</h4>
+				<p class="book_author">{{books.author}}</p>
+			</li>
+		</ul>
 		books: {{books}}
 	</div>
 	
