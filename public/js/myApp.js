@@ -6,6 +6,11 @@ myApp.config(function() {
 
 });
 
-myApp.run(function() {
-
-});
+myApp.run([
+	'$rootScope',
+	'APP_VERSION',
+	($rootScope, APP_VERSION) => {
+		console.log('I\'m running angular!');
+		$rootScope.APP_VERSION = APP_VERSION;
+	}
+])
