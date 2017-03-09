@@ -9,6 +9,6 @@ myApp.controller('myController', [
 		$scope.myModel = 'Ready Player One';
 		$scope.mainCharacter = mainCharacter;
 		$scope.charVersion = CharacterVersionFactory;
-		$scope.books = BookService.getBooks();
+		$scope.BookService = BookService;
 	}
 ]);

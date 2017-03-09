@@ -29,13 +29,17 @@
 		<br>
 		concat: {{charVersion}}
 		<br>
-		<ul ng-repeat="books in books">
+		<input type="text" ng-model="new_book.title" name="title" placeholder="Title" />
+		<input type="text" ng-model="new_book.author" name="author" placeholder="Author" />
+		<button type="submit" ng-click="BookService.addBook(new_book); new_book={}">New Book</button>
+		<br>
+		<ul ng-repeat="book in BookService.books">
 			<li class="book">
-				<h4 class="book_title">{{books.title}}</h4>
-				<p class="book_author">{{books.author}}</p>
+				<h4 class="book_title">{{book.title}}</h4>
+				<p class="book_author">{{book.author}}</p>
 			</li>
 		</ul>
-		books: {{books}}
+		books: {{BookService.books}}
 	</div>
 	
 </body>
