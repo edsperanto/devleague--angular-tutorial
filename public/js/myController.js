@@ -1,3 +1,4 @@
+// external controller
 myApp.controller('myController', [
 	'$scope',
 	($scope) => {
